@@ -35,7 +35,7 @@ Xcode 15+ (compatible with iOS 17+).
 Installation
 
 Clone the repository:
-textgit clone https://github.com/yourusername/LoanBear.git
+textgit clone https://github.com/sqtechsavvy/LoanBear.git
 
 Open the project in Xcode:
 
