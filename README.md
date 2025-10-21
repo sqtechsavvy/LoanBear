@@ -1,5 +1,5 @@
-Thought for 6sLoanBear iOS App
 Overview
+
 LoanBear is a sample iOS application that simulates a friendly loan-providing service with a bear-themed interface. The app allows users to sign up, log in, and calculate loan details including total repayment and monthly payments based on a simple interest model (10% of principal per month). It demonstrates senior-level iOS development practices using SwiftUI, Combine, and MVVM architecture.
 This app is for educational and demonstration purposes only. It uses mock authentication and a simplistic interest calculation. In a production environment, integrate with a secure backend (e.g., Firebase) and use realistic financial models.
 Features
