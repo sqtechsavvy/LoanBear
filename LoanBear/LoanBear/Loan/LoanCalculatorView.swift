@@ -62,6 +62,12 @@ struct LoanCalculatorView: View {
                         .font(.headline)
                         .foregroundColor(.green)
                 }
+                
+                if let monthly = viewModel.monthlyPayment {
+                    Text("Monthly Payment: $\(monthly, specifier: "%.2f")")
+                        .font(.headline)
+                        .foregroundColor(.green)
+                }
             }
             .padding()
             .navigationTitle("LoanBear")

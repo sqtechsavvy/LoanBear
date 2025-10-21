@@ -19,6 +19,7 @@ class LoanCalculatorViewModelTests: XCTestCase {
         viewModel.computeLoan()
         
         XCTAssertEqual(viewModel.totalRepayment, 2200.0) // 1000 + (1000 * 0.10 * 12) = 1000 + 1200 = 2200
+        XCTAssertEqual(viewModel.monthlyPayment, 183.33333333333334) // 2200 / 12 ≈ 183.33
         XCTAssertNil(viewModel.errorMessage)
     }
     
@@ -30,9 +31,8 @@ class LoanCalculatorViewModelTests: XCTestCase {
         viewModel.computeLoan()
         
         XCTAssertNil(viewModel.totalRepayment)
+        XCTAssertNil(viewModel.monthlyPayment)
         XCTAssertNotNil(viewModel.errorMessage)
     }
-    
-    // Add more tests...
 }
 #endif
